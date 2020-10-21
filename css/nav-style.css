@@ -1,0 +1,21 @@
+.header-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+.nok-logo {
+  margin-left: 60px;
+  padding-top: 20px;
+  display: inline;
+}
+.topnav-right a{
+  /* display: flex; */
+  /* display: inline;   */
+  justify-content: end;  
+  font-family: Poppins;
+  margin-right: 60px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+} 

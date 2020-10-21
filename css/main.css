@@ -1,0 +1,496 @@
+p {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #dcdcdc;
+  font-weight: 400;
+}
+h1,h2,h3,h4 {
+  font-family: "Playfair Display";
+}
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+  margin-top: 10px;
+}
+  @media (max-width: 480px) {
+   h1 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+h2 {
+  font-family: Playfair-Display;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+}
+  @media (max-width: 480px) {
+    h2 {
+    font-size: 24px;
+    font-weight: 350;
+  }
+}
+h3 {
+  font-size: 22px; 
+  font-weight: 600;
+  }
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+    h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 16px;
+      font-weight: 250;
+    } 
+  } 
+
+  .header-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  .nok-logo {
+    margin-left: 20px;
+    padding-top: 20px;
+    display: inline;
+  }
+  .topnav-right a{
+    justify-content: end;  
+    font-family: Poppins;
+    margin-right: 60px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  } 
+  
+  .hamburger-icon {
+    width: 60px;
+    padding: 10px;
+    display: none;
+  }
+  @media (max-width: 780px){
+    .hamburger-icon {
+      display: block;
+    }
+    .topnav-right{
+      display: none;
+    }
+  }
+  .hamburger-menu{
+   background-color: rgba(0,0,0,0.91);
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   opacity: 0;
+   overflow-y: scroll;
+   padding: 15px 30px;
+   position: fixed;
+   transition: all 0.35s ease-in-out;
+   transform: translateX(100%);
+   z-index: 10;
+   text-align: right;
+  
+  }
+  .hamburger-menu a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin: 24px auto;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-close {
+    cursor: pointer;
+    width: 24px;
+    padding: 20px;
+  }
+  
+  .menu-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+ 
+body {
+  margin: 0;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+   @media (min-width: 480px) {
+  body {
+  flex-direction: column;
+  }
+}   
+
+  .hero-image {
+    background-image: url(../images/NOKHeromed5.jpgExtraHeadSpace.jpg);
+    background-size: cover;
+    height: 1200px;
+    width: 100%;
+    background-color: #333;
+    background-blend-mode: overlay;
+    padding-top: 10px;
+    margin-bottom: -40px;
+}
+
+  .hero-text  {
+    text-align: center;
+    color: white; 
+    width: 550px;
+    margin-top: 300px;
+}
+
+ .hero-text p {
+    text-align: center; 
+    margin: auto; 
+    color: #dcdcdc; 
+}  
+
+ .gold-salon {
+   display: flex; 
+   justify-content: flex-end;  
+   margin-right: 120px;
+   margin-top: 240px; 
+   height: 120px;
+}
+
+.gold-salon img {
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+
+.gold {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: center; 
+  padding-right: 0; 
+  margin-top: 0px;
+   margin-right: 240px; 
+  padding-top: 0px;
+  font-size: 12px;
+}
+.gold p{
+  color: #dcdcdc;
+  font-size: 12px;
+  width: 320px;
+  padding-right: 60px;
+  padding-top: 24px;
+}
+
+
+/* h1 {
+  margin-bottom: 30px;
+  /* color: white; */
+  /* } */
+
+   @media (min-width: 480px) {
+    text-design {
+    font-size: 24px;
+  }
+}  
+ 
+
+
+
+.welcome-container {
+   background-image:  url(../NOKHeromed5.just.bg.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+  margin: auto;
+}  
+.welcome-container{
+  background: linear-gradient(-45deg, rgba(35,35,35,1) 0%,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 0%,rgba(96,96,96,1) 0%,rgba(0,0,0,1) 0%,rgba(33,33,33,1) 0%,rgba(0,0,0,1) 0%,rgba(15,15,15,1) 1%,rgba(0,0,0,1) 4%,rgba(0,0,0,1) 30%,rgba(51,51,51,1) 48%,rgba(56,56,56,1) 53%,rgba(10,10,10,1) 73%,rgba(10,10,10,1) 86%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 99%,rgba(28,28,28,1) 99%,rgba(10,10,10,1) 100%,rgba(19,19,19,1) 100%,rgba(0,0,0,1) 100%);
+}
+
+.welcome-container h1 {
+  margin-top: 80px;
+  color: #fff;
+  padding-bottom: 12px;
+}
+  
+ .welcome-container h4{
+  margin-top: -20px;
+  font-weight: 400;
+  padding-bottom: 36px;
+  color: #fff;
+  
+}
+
+.welcome-container p {
+  color:#dcdcdc;
+  padding-bottom: 96px;
+  margin-top: 80px;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.welcome-container h2 {
+  margin-top: 160px;
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+  margin: auto;
+  color: #fff;
+  
+} 
+
+  .heavenly-collection-container {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/NOKHeavenlyRedMed5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat center center;
+  width: 100%;
+  height: 850px;
+  background-attachment: fixed;
+}  
+
+.heavenly-collection-container h2 {
+  color: white;
+  margin-top: 680px;
+}
+
+/* show more button-used an anchor tag so it did'nt show blue as buttons do */
+  .more {
+  font-family: poppins; 
+  font-size: 16px;
+  width: 100px;
+  border: white 1.5px solid;
+  text-decoration: none;
+  color: white; 
+  padding: 5px 10px; 
+  border-radius: 1px;
+  cursor: pointer;
+  margin: auto; 
+  display: block;
+  margin-bottom: 30px;
+  text-align: center; 
+  transition: 0.5s ease-in-out;
+} 
+ 
+ .more:hover {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+   border-radius: 1px;
+   width: 120px; 
+   font-size: 18px;
+   font-weight: 600;
+   padding: 10px 0px;
+   align-items: center; 
+   letter-spacing: 1px;
+   justify-content: center;
+   box-shadow: 1px 2px 1px  rgba(3,3,3, 0.12);   
+   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1.8);   
+}  
+
+ .indian-collection-container {
+  display: flex;
+  justify-content: center;  
+  background-image: url(../images/NOKIndianFingerWaveMed7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat center;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  align-items: center;
+} 
+
+.indian-collection-container h2 {
+  color: white;
+  margin-top: 680px;
+}
+
+.getfree-collection-container {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/NOKGFShagmed5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat center center;
+  background-position-x: center;
+  width: 100%;
+  height: 900px;
+   background-attachment: fixed;
+}
+
+
+
+.getfree-collection-container h2 {
+  color: white;
+  margin-top: 730px;  
+ }
+ 
+
+
+
+.still-collection-container {
+  margin: 0;
+  height: 900px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+   align-items: center;  
+   margin: auto;
+   border-top: 0px black solid;   
+   border-bottom: 0px black solid; 
+ }
+  
+
+
+  .latest-container {
+   display: flex;
+   justify-content: center; 
+   align-items: center;  
+   background-color: #fff;   
+   width: 100%;
+   margin: 0px;
+ } 
+
+.latest {
+  padding: -10px;
+  width: 33.33%;
+  height: 600px;
+  color: white;
+  background-size: cover;
+  text-align: center;
+}  
+
+.latest h3{
+  margin-top: 450px; 
+  margin-bottom: 30px;
+  height: 30px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.latest a{
+  text-decoration: none;
+  font-family: poppins;
+  width: 100px;
+  padding: 5px 10px;
+  background: transparent;
+  border: white 1px solid;
+  border-radius: 1px;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}  
+
+ .latest a:hover {
+  font-size: 18px; 
+  padding: 5px 10px; 
+  border: 1px white solid;
+  border-radius: 1px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  box-shadow: 1px 3px 1px rgba(3,3,3, 0.12);  
+  text-shadow: 0px 0px 6px rgba(255,255,255, 1.8); 
+} 
+
+ 
+  
+ 
+
+.raven {
+  background-image: url(../images/NOKRaven+Boy.jpg);
+}
+.still {
+  background-image: url(../images/NOKStillBowl.jpg); 
+}
+    
+ .subterfuge {
+  background-image: url(../images/subterfuge_3.jpg);
+} 
+
+.still  h2{
+  margin-top: 360px;
+ }
+
+.raven  h2{
+  margin-top: 360px;
+}
+
+.subterfuge  h2{
+  margin-top: 360px;
+ }
+body {
+  margin: 0;
+  background: linear-gradient(-45deg, rgba(35,35,35,1) 0%,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 0%,rgba(96,96,96,1) 0%,rgba(0,0,0,1) 0%,rgba(33,33,33,1) 0%,rgba(0,0,0,1) 0%,rgba(15,15,15,1) 1%,rgba(0,0,0,1) 4%,rgba(0,0,0,1) 30%,rgba(51,51,51,1) 48%,rgba(56,56,56,1) 53%,rgba(10,10,10,1) 73%,rgba(10,10,10,1) 86%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 99%,rgba(28,28,28,1) 99%,rgba(10,10,10,1) 100%,rgba(19,19,19,1) 100%,rgba(0,0,0,1) 100%);
+  
+   
+}
+ .footer-main{
+   background: linear-gradient(-45deg, rgba(35,35,35,1) 0%,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 0%,rgba(96,96,96,1) 0%,rgba(0,0,0,1) 0%,rgba(33,33,33,1) 0%,rgba(0,0,0,1) 0%,rgba(15,15,15,1) 1%,rgba(0,0,0,1) 4%,rgba(0,0,0,1) 30%,rgba(51,51,51,1) 48%,rgba(56,56,56,1) 53%,rgba(10,10,10,1) 73%,rgba(10,10,10,1) 86%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 99%,rgba(28,28,28,1) 99%,rgba(10,10,10,1) 100%,rgba(19,19,19,1) 100%,rgba(0,0,0,1) 100%);
+   display: flex;
+   align-items: center; 
+   justify-content: space-evenly; 
+ }
+
+ .ourpartners{
+  text-align: center;
+  font-weight: 700; 
+  margin-top: 60px;
+  color: #fff;
+  margin-bottom: 30px;
+  
+} 
+
+ .partners { 
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;  
+    margin: 10px 10px 10px; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    padding-right: 10px; 
+} 
+.social , p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social  p{
+  justify-content: center;
+  color: #dcdcdc;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  padding-bottom: 30px;
+  width: 600px;
+}
+ 
+ .social a{
+   font-size: 18px;
+   text-decoration: none;
+   padding: 10px;
+   font-family: "Poppins";
+   margin-top: 10px;
+   }
+span {
+   padding-right: 10px; 
+} 
+
+
+
+
+   

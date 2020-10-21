@@ -1,0 +1,284 @@
+p {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #dcdcdc;
+  font-weight: 400;
+}
+h1,h2,h3,h4 {
+  font-family: "Playfair Display";
+}
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+  margin-top: 10px;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+h2 {
+  font-family: Playfair-Display;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+    font-weight: 350;
+  }
+}
+h3 {
+  font-size: 22px; 
+  font-weight: 600;
+  }
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 16px;
+      font-weight: 250;
+    } 
+  }
+
+  .header-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+  .nok-logo {
+    margin-left: 20px;
+    padding-top: 20px;
+    display: inline;
+  }
+  .topnav-right a{
+    /* display: inline;   */
+    justify-content: end;  
+    font-family: Poppins;
+    margin-right: 60px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  } 
+  
+  .hamburger-icon {
+    width: 60px;
+    padding: 10px;
+    display: none;
+  }
+  @media (max-width: 780px){
+    .hamburger-icon {
+      display: block;
+    }
+    .topnav-right{
+      display: none;
+    }
+  }
+  .hamburger-menu{
+   background-color: rgba(0,0,0,0.91);
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   opacity: 0;
+   overflow-y: scroll;
+   padding: 15px 30px;
+   position: fixed;
+   transition: all 0.35s ease-in-out;
+   transform: translateX(100%);
+   z-index: 10;
+   text-align: right;
+  
+  }
+  .hamburger-menu a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin: 24px auto;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-close {
+    cursor: pointer;
+    width: 24px;
+    padding: 20px;
+  }
+  
+  .menu-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+
+.direct-nok {
+  display: flex;
+  /* justify-content: center; */
+  background-image: url(../images/Heavenly5.just.bg.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  }
+.left-direct, .right-direct{
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+  #black-overlay-left-direct {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.87);
+  margin-left: 0;
+  z-index: 1;
+  padding-bottom: 20px; 
+}
+
+
+
+ .contact-details-header {
+  font-family: Poppins;
+  font-weight: regular;
+  color: white;
+  font-size: 24px;
+  margin-left: 60px;
+  margin-top: 0px;
+  padding-top: 60px;
+} 
+
+.noddys-address p {
+    display: block;
+    line-height: 1.5;
+    font-family: Poppins;
+    list-style: none;
+    font-size: 16px;
+    margin-left: 60px;
+  }
+   .noddys-address a {
+    font-size: 16px;
+    display: block;
+    color:  #70A2C7;
+    cursor: pointer;
+    text-decoration: none;
+  } 
+
+    table  {
+      display: flex;
+      margin-left: 60px;
+      text-align: left;
+      font-family: "Poppins";
+      font-size: 16px;
+    }
+
+    th, td{
+      color: #fff;
+      }
+
+    td {
+        color: #fff;
+        padding-left: 90px;
+      } 
+
+    .direct-nok p {
+      margin-left: 60px;
+      color: #dcdcdc;
+    }
+
+    .parking {
+      color: white;
+      margin-left: 60px;
+      margin-top: 40px;
+      margin-bottom: 4px;
+    }
+
+    #hours {
+      color: white;
+      margin-left: 60px;
+      margin-top: 40px;
+      margin-bottom: 8px;
+    }
+    #train {
+      color: white;
+      margin-left: 60px;
+     
+    }
+    #bus {
+      color: white;
+      margin-left: 60px;
+      margin-top: 0px;
+     }
+  .right-direct {
+    display: flex;
+    align-items: center;
+    height: 900px;
+    width: 50%;
+    position: relative;
+    background-color:rgba(0,0,0,0.89);
+     margin-left: 0;
+     z-index: 0;
+     padding-bottom: 0px;
+   } 
+   #black-overlay-right-direct {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.87);
+    margin-left: 0;
+    z-index: -1;
+    padding-bottom: 20px; 
+    margin-top: 0%;
+  }
+    
+   
+   #map {
+    justify-content: center;
+    height:900px;
+    width:100%;
+    z-index: 10;
+    padding-top: 0;
+   }
+    body {
+      background-color: #000;
+    }
+    .footer{
+      display: flex;
+      justify-content: center;
+      height: 280px;
+      width: 100%;
+    }
+    .contact-partners{
+      width: 208px;
+      margin: auto;  
+    }
+  
+   .contact-social{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      
+    }
+    .contact-social a{
+      text-decoration: none;
+        padding: 8px; 
+       font-family: "Poppins";
+    }
+    .contact-address p{
+      margin: auto; 
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+      width: 700px;
+      margin-bottom: 40px;
+    }
+ 
