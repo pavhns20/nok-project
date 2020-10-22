@@ -85,66 +85,29 @@ h3 {
       display: none;
     }
   }
-  .hamburger-menu{
-   background-color: rgba(0,0,0,0.91);
-   bottom: 0;
-   left: 0;
-   right: 0;
-   top: 0;
-   opacity: 0;
-   overflow-y: scroll;
-   padding: 15px 30px;
-   position: fixed;
-   transition: all 0.35s ease-in-out;
-   transform: translateX(100%);
-   z-index: 10;
-   text-align: right;
-  
-  }
-  .hamburger-menu a {
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    margin: 24px auto;
-    text-align: center;
-    text-decoration: none;
-  }
-  .menu-close {
-    cursor: pointer;
-    width: 24px;
-    padding: 20px;
-  }
-  
-  .menu-open {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-  
 
 .direct-nok {
   display: flex;
-  /* justify-content: center; */
+  margin: 0;
+}
+
+.left-direct, .right-direct{
+  flex-direction: column;
+  width: 50%;
+}
+
+.left-direct {
   background-image: url(../images/Heavenly5.just.bg.jpg); 
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-  }
-.left-direct, .right-direct{
-  flex-direction: column;
-  height: 100%;
-  width: 50%;
 }
-  #black-overlay-left-direct {
-  position: relative;
-  width: 100%;
-  height: 100%;
+
+#black-overlay-left-direct {
   background-color:rgba(0,0,0,0.87);
   margin-left: 0;
   z-index: 1;
   padding-bottom: 20px; 
 }
-
-
 
  .contact-details-header {
   font-family: Poppins;
@@ -217,10 +180,7 @@ h3 {
       margin-left: 60px;
       margin-top: 0px;
      }
-  .right-direct {
-    display: flex;
-    align-items: center;
-    height: 900px;
+  .right-direct {   
     width: 50%;
     position: relative;
     background-color:rgba(0,0,0,0.89);
@@ -228,25 +188,16 @@ h3 {
      z-index: 0;
      padding-bottom: 0px;
    } 
-   #black-overlay-right-direct {
-    position: relative;
-    width: 100%;
+
+  #map iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     height: 100%;
-    background-color:rgba(0,0,0,0.87);
-    margin-left: 0;
-    z-index: -1;
-    padding-bottom: 20px; 
-    margin-top: 0%;
   }
-    
-   
-   #map {
-    justify-content: center;
-    height:900px;
-    width:100%;
-    z-index: 10;
-    padding-top: 0;
-   }
+  
     body {
       background-color: #000;
     }
