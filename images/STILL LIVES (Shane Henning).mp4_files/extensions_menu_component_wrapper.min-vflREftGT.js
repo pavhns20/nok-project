@@ -1,2 +1,0 @@
-define(["require","exports","modules/clean/react/extensions/data/store","modules/clean/react/extensions/extensions_menu_component_v2"],(function(e,n,t,s){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.ExtensionsMenu=s.ExtensionsMenuV2,t.getStore()}));
-//# sourceMappingURL=extensions_menu_component_wrapper.min.js-vflfdA_9E.map

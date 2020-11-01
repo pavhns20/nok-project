@@ -13,44 +13,44 @@ h1 {
   font-size: 48px;
   margin-top: 10px;
 }
-@media (max-width: 480px) {
+ @media (max-width: 480px) {
   h1 {
     font-size: 26px;
     font-weight: 400;
   }
-}
+} 
 h2 {
   font-family: Playfair-Display;
   color: #fff;
   font-weight: 700;
   font-size: 32px;
 }
-@media (max-width: 480px) {
+ @media (max-width: 480px) {
   h2 {
     font-size: 24px;
     font-weight: 350;
   }
-}
+} 
 h3 {
   font-size: 22px; 
   font-weight: 600;
   }
-  @media (max-width: 480px) {
+   @media (max-width: 480px) {
     h3 {
       font-size: 20px;
       font-weight: 300;
     }
-  }
+  } 
   h4 {
     font-size: 18px;
     font-weight: 500;
   }
-  @media (max-width: 480px) {
+   @media (max-width: 480px) {
     h4 {
       font-size: 16px;
       font-weight: 250;
     } 
-  }
+  } 
 
 .header-collections {
   display: flex;
@@ -64,7 +64,6 @@ h3 {
   display: inline;
 }
 .topnav-right a{
-  /* display: inline;   */
   justify-content: end;  
   font-family: Poppins;
   margin-right: 60px;
@@ -75,17 +74,19 @@ h3 {
 
 .hamburger-icon {
   width: 60px;
+  margin-right: 60px;
   padding: 10px;
   display: none;
 }
-@media (max-width: 780px){
+
+ @media (max-width: 1080px){
   .hamburger-icon {
     display: block;
   }
   .topnav-right{
     display: none;
   }
-}
+} 
 .hamburger-menu{
  background-color: rgba(0,0,0,0.91);
  bottom: 0;
@@ -125,15 +126,10 @@ h3 {
 body {
   margin: 0;
   margin-top: 0px;
-  display: flex;
+  /* display: flex; */
   width: 100%;
 }
-
- @media (min-width: 480px) {
-  body {
-  flex-direction: column;
-  }
-} 
+ 
 body {
   background-color: #000; 
 }
@@ -152,6 +148,21 @@ h2 {
    justify-content: center;
    align-items: center;
 }
+@media (max-width: 768px) {
+  #heavenly-col {
+    flex-direction: row;
+    margin: auto;
+    width: 30%;
+}
+} 
+@media(max-width:1350px){
+#heavenly-col {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+}
  .heavenly-col-left img {
   height: 250px; 
   width: 200px;
@@ -166,19 +177,30 @@ h2 {
   margin-left: 8px;
   margin-right: 8px;
 }
- #get-col { 
-  display: flex;
-  width: 30%;
-} 
-#fullscreen-video {
+ 
+
+.video {
   display: flex;
   justify-content: center;
   padding-top: 0px;
-  margin-left: 150px;
-  width: 50%;
-  height: 50%;
-  border: 10px black solid;
+  padding-bottom: 0px;
+  width: 100%;
+  margin-top: 0px;
+  height: 100%;
+  border: 150px black solid;
 }
+
+ @media (max-width: 960px) {
+.video {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+ margin: auto; 
+  width: 100%;
+  height: 50%;
+  border: 80px black solid;
+  }
+} 
 
 
 #summer {
@@ -188,10 +210,19 @@ h2 {
   align-items: center;
   margin-bottom: 140px; 
  } 
- @media (max-width: 480px) {
+  @media (max-width: 768px) {
    #summer {
-     flex-shrink: 2;
-     align-items: center;
+     flex-direction: row;
+     margin: auto;
+     width: 30%;
+ }
+} 
+@media(max-width:1350px){
+ #summer {
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
  }
 }
 .summer-left img {
@@ -216,7 +247,21 @@ h2 {
   align-items: center;
   margin-bottom: 100px; 
 } 
-
+@media (max-width: 768px) {
+  #sub-col {
+    flex-direction: row;
+    margin: auto;
+    width: 30%;
+}
+} 
+@media(max-width:1350px){
+#sub-col {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+}
 .sub-col-left img {
   margin-left: 8px;
   margin-right: 8px;
@@ -237,22 +282,22 @@ h2 {
   justify-content: center;
   padding-top: 0px;
   padding-bottom: 0px;
-  min-width: 100%;
+  width: 100%;
   height: 100%;
   margin-top: 0px;
-  border: 50px black solid
+  border: 150px black solid
 } 
-@media (max-width: 780px) {
+ @media (max-width: 960px) {
 .fullscreen-video1 {
   display: flex;
   justify-content: center;
   padding-top: 0px;
-  margin-left: 50px;
-  width: 50%;
-  height: 50%;
-  border: 10px black solid;
+  margin: auto;
+  width: 100%;
+  height: 60%;
+  border: 80px black solid;
   }
-}
+} 
 
 #raven {
   display: flex;
@@ -263,13 +308,21 @@ h2 {
   margin-top: 80px;
   margin-bottom: 60px;
 } 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   #raven {
-    align-items: center;
-  flex-direction: row;
-  width: 100%;
-  }
+    flex-direction: row;
+    margin: auto;
+    width: 30%;
 }
+} 
+@media(max-width:1350px){
+#raven {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+} 
 .raven-left img {
   margin-left: 8px;
   margin-right: 8px;
@@ -318,6 +371,7 @@ body {
   width: 700px;
   margin-bottom: 40px;
 }
+
 
 
 

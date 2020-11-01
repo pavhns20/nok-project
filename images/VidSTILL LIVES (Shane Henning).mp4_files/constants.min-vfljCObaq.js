@@ -1,2 +1,0 @@
-define(["require","exports"],(function(e,n){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.PROJECT="te_open_team_join",(function(e){e.ONBOARDING_MODAL_VIEW="onboarding_modal_view"})(n.OpenTeamJoinUserAction||(n.OpenTeamJoinUserAction={}))}));
-//# sourceMappingURL=constants.min.js-vflYgBoNQ.map

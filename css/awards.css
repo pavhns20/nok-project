@@ -12,7 +12,7 @@ h1 {
   font-size: 48px;
   margin-top: 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   h1 {
     font-size: 26px;
     font-weight: 400;
@@ -24,7 +24,7 @@ h2 {
   font-weight: 700;
   font-size: 32px;
 }
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   h2 {
     font-size: 24px;
     font-weight: 350;
@@ -74,17 +74,18 @@ h3 {
   
   .hamburger-icon {
     width: 60px;
+    margin-right: 60px;
     padding: 10px;
     display: none;
   }
-  @media (max-width: 780px){
+  @media (max-width: 1080px){
     .hamburger-icon {
       display: block;
     }
     .topnav-right{
       display: none;
     }
-  }
+  } 
   .hamburger-menu{
    background-color: rgba(0,0,0,0.91);
    bottom: 0;
@@ -133,20 +134,43 @@ h3 {
   width: 50%;
 }
 .left-awards {
-  background-image: url(../images/Heavenly1just.bgcopy.jpg);
-   background-repeat: repeat no-repeat;
+  background-image: url(../images/Heavenly4bg.png);
+   background-repeat:  no-repeat;
   background-size: cover;
   /* padding-bottom: 0px;
   margin-bottom: 0px;
   margin-left: 0px; */
   /* background-position: top; */
    }
+
+ #black-overlay-left-awards{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.8);
+  margin-left: 0;
+  z-index: 10;
+}  
+
    .left-awards h2  {
      padding-top: 32px;
      padding-bottom: 0px;
      color: #fff;
      margin-left: 60px;
 }
+ @media (max-width: 800px) {
+  .left-awards h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+  }
+}
+  @media (max-width: 600px){
+    .left-awards h2{
+      font-size: 20px;
+      font-weight: 800;
+    }
+  } 
 
   .expo {
   padding-top: 40px;
@@ -163,20 +187,43 @@ h3 {
 
   
 
- #black-overlay{
+ #black-overlay-left-awards{
   position: relative;
   width: 100%;
   height: 100%;
-  background-color:rgba(0,0,0,0.87);
+  background-color:rgba(0,0,0,0.81);
   margin-left: 0;
-}  
+  z-index: 1;
+}   
 .nokawards,p {
   margin-top: 16px;
   line-height: 1;
-  margin-left: 60px; 
-} 
+  margin-left: 60px;
+  } 
+  @media screen and ( min-width:1120px){
+  .nok-awards,p {
+    margin-bottom: 24px;
+  }
+}  
 #carousel img {
 height: 900px;
+}
+@media (max-width: 920px){
+  #carousel img{
+    height: 100%;
+    flex-direction: column;
+}
+}
+.shane{
+height: 50%;
+}
+@media (min-width:920px){
+  .shane{
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 body {
@@ -190,6 +237,7 @@ body {
   width: 100%;
   margin-top: 80px;
 }
+
 .contact-partners{
   width: 208px;
   margin: auto;  
@@ -199,13 +247,14 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
-  
-}
+  }
+ 
 .contact-social a{
   text-decoration: none;
   padding: 8px; 
   font-family: "Poppins";
 }
+
 .contact-address p{
   margin: auto; 
   text-align: center;
@@ -213,3 +262,8 @@ body {
   width: 700px;
   margin-bottom: 40px;
 }
+  @media screen and (max-width:780px){
+  .contact-address p {
+    width:395px;
+  }  
+  }

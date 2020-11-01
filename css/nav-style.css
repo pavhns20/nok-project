@@ -9,8 +9,8 @@
   padding-top: 20px;
   display: inline;
 }
-.topnav-right a{
-  /* display: flex; */
+.topnav-right {
+   /* display: flex;  */
   /* display: inline;   */
   justify-content: end;  
   font-family: Poppins;
@@ -18,7 +18,19 @@
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  text-align: center;
 } 
+
+@media screen and (max-width: 1250px){
+  .topnav-right{
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1085px){
+  .topnav-right{
+    margin-right: 20px;
+}
+}
 
 /* Hamburger Styles */
 .hamburger-menu{
@@ -36,6 +48,11 @@
   z-index: 10;
   text-align: right;
  }
+ /* @media screen and (max-width: 1085px){
+   .hamburger-menu{
+     display: block;
+   }
+ } */
  
  .hamburger-menu a {
    color: #fff;
@@ -47,8 +64,10 @@
  }
  .menu-close {
    cursor: pointer;
-   width: 24px;
+   width: 28px;
    margin: 20px;
+   margin-right: 48px;
+   padding-top: 12px;
  }
 
  .menu-open {

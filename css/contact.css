@@ -63,7 +63,6 @@ h3 {
     display: inline;
   }
   .topnav-right a{
-    /* display: inline;   */
     justify-content: end;  
     font-family: Poppins;
     margin-right: 60px;
@@ -76,15 +75,17 @@ h3 {
     width: 60px;
     padding: 10px;
     display: none;
+    margin-right: 60px;
   }
-  @media (max-width: 780px){
+ 
+  @media (max-width: 1080px){
     .hamburger-icon {
       display: block;
     }
     .topnav-right{
       display: none;
     }
-  }
+  } 
 
 .direct-nok {
   display: flex;
@@ -101,13 +102,24 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+@media (max-width:680px){
+  .left-direct{
+    width: 120%;
+}
+}
 #black-overlay-left-direct {
-  background-color:rgba(0,0,0,0.87);
+  background-color:rgba(0,0,0,0.85);
   margin-left: 0;
-  z-index: 1;
+  z-index: 10;
   padding-bottom: 20px; 
 }
+@media (max-width:680px){
+  #black-overlay-left-direct{
+    width: 100%;
+    padding-bottom: 0;
+}
+}
+
 
  .contact-details-header {
   font-family: Poppins;
@@ -142,7 +154,7 @@ h3 {
       font-family: "Poppins";
       font-size: 16px;
     }
-
+    
     th, td{
       color: #fff;
       }
@@ -151,10 +163,21 @@ h3 {
         color: #fff;
         padding-left: 90px;
       } 
+      @media (max-width:680px){
+        td{
+          padding-left: 30px;
+      }
+    }
 
     .direct-nok p {
       margin-left: 60px;
       color: #dcdcdc;
+    }
+    @media (max-width:680px){
+      .direct-nok p{
+        font-size:16px;
+        width: 300px
+      }
     }
 
     .parking {
@@ -163,33 +186,71 @@ h3 {
       margin-top: 40px;
       margin-bottom: 4px;
     }
-
+    @media (max-width:680px){
+      .parking{
+        font-size:26px;
+      }
+    }
     #hours {
       color: white;
       margin-left: 60px;
       margin-top: 40px;
       margin-bottom: 8px;
     }
+    @media (max-width:680px){
+      #hours{
+        font-size:26px;
+      }
+    }
     #train {
       color: white;
       margin-left: 60px;
      
+    }
+    @media (max-width:680px){
+      #train{
+        font-size:26px;
+      }
     }
     #bus {
       color: white;
       margin-left: 60px;
       margin-top: 0px;
      }
-  .right-direct {   
+     @media (max-width:680px){
+      #bus{
+        font-size:26px;
+      }
+    }
+  .right-direct { 
+    display: flex;  
     width: 50%;
     position: relative;
-    background-color:rgba(0,0,0,0.89);
+    background-color:rgba(0,0,0,0.8);
      margin-left: 0;
      z-index: 0;
      padding-bottom: 0px;
    } 
-
-  #map iframe {
+   @media (max-width: 680px){
+    .right-direct{
+      display: none;
+      width: 100%;
+    }
+   }
+   .small-map {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 0px;
+  }
+@media (min-width: 680px){
+  .small-map{
+    display: none;
+  }
+}
+   
+  
+  #map,iframe {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -197,6 +258,12 @@ h3 {
     left: 0;
     height: 100%;
   }
+   @media (min-width:680px){
+    #map,iframe {
+      display: show;
+  }
+  } 
+
   
     body {
       background-color: #000;
@@ -207,6 +274,11 @@ h3 {
       height: 280px;
       width: 100%;
     }
+    @media (max-width:680px){
+      .footer{
+        margin-top: 0px;
+    }
+  }
     .contact-partners{
       width: 208px;
       margin: auto;  
@@ -231,5 +303,10 @@ h3 {
       font-size: 16px;
       width: 700px;
       margin-bottom: 40px;
+    }
+    @media screen and (max-width:780px){
+      .contact-address p {
+        width:395px;
+      }
     }
  
