@@ -5,7 +5,7 @@
   background-color: #000;
 }
 .nok-logo {
-  margin-left: 60px;
+  margin-left: 48px;
   padding-top: 20px;
   display: inline;
 }
@@ -14,7 +14,7 @@
   /* display: inline;   */
   justify-content: end;  
   font-family: Poppins;
-  margin-right: 60px;
+  margin-right: 48px;
   text-decoration: none;
   color: #fff;
   cursor: pointer;

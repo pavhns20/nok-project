@@ -63,14 +63,14 @@ h3 {
   background-color: #000;
 }
 .nok-logo {
-  margin-left: 0px;
+  margin-left: 8px;
   padding-top: 20px;
   display: inline;
 }
 .topnav-right a{
   justify-content: end;  
   font-family: Poppins;
-  margin-right: 60px;
+  margin-right: 48px;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
@@ -78,7 +78,7 @@ h3 {
 
 .hamburger-icon {
   width: 60px;
-  margin-right: 60px;
+  margin-right: 48px;
   padding: 10px;
   display: none;
 }
