@@ -510,14 +510,6 @@ body {
 } 
  
 
- /* @media screen and ( max-width: 960px) {
-  .latest a{
-   position: relative; 
-  }
-  }  */
-  
- 
-
 .raven {
   background-image: url(../images/NOKRaven+Boy.jpg);
 }
@@ -532,7 +524,6 @@ body {
 /* .still  h2{
   margin-top: 360px;
  } */
-
 /* .raven  h2{
   margin-top: 360px;
 } */
