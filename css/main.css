@@ -64,6 +64,12 @@ h3 {
     padding-top: 20px;
     display: inline;
   }
+  @media (max-width: 768px){
+    .nok-logo{
+      margin-left: 20px;
+      /* margin-right: auto; */
+    }
+  }
   .topnav-right a{
     justify-content: end;  
     font-family: Poppins;
@@ -87,43 +93,6 @@ h3 {
       display: none;
     }
   } 
-  .hamburger-menu{
-   background-color: rgba(0,0,0,0.95);
-   bottom: 0;
-   left: 0;
-   right: 0;
-   top: 0;
-   opacity: 0;
-   overflow-y: scroll;
-   padding: 15px 30px;
-   position: fixed;
-   transition: all 0.35s ease-in-out;
-   transform: translateX(100%);
-   z-index: 10;
-   text-align: right;
-  
-  }
-  .hamburger-menu a {
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    margin: 24px auto;
-    text-align: center;
-    text-decoration: none;
-  } 
-  .menu-close {
-    cursor: pointer;
-    width: 28px;
-    margin: 20px;
-    padding: 20px;
-    margin-right: 48px;
-  } 
-  
-   .menu-open {
-    transform: translateX(0%);
-    opacity: 1;
-  } 
-
  
 body {
   margin: 0;
@@ -153,16 +122,13 @@ body {
     padding-top: 10px;
     margin-bottom: -40px;
 }
-@media screen and (max-width:960px){
+ @media screen and (max-width:960px){
   .hero-image {
    background-size: cover;
+   background-position: center;
   }
-}
-/* @media screen and (max-width: 768px){
-  .hero-image {
- align-items: center;
-}
-} */
+} 
+
   .hero-text  {
     text-align: center;
     color: white; 
@@ -170,12 +136,25 @@ body {
     margin-top: 300px;
     margin-left: 16px;
 }
+@media (max-width: 768px){
+  .hero-text{
+    margin: auto;
+    padding-top: 300px;
+     width: 350px;
+  }
+}
 
  .hero-text p {
     text-align: center; 
     margin: auto; 
     color: #dcdcdc; 
-}  
+} 
+@media (max-width: 768px){
+  .hero-text p{
+    width: 350px;
+
+  }
+} 
 
  .gold-salon {
    display: flex; 
@@ -218,16 +197,6 @@ body {
   padding-top: 0px;
   font-size: 12px;
 }
- 
-/* @media screen and (max-width: 768px){
-  .gold  {
-    margin-right: 10px;
-    padding-bottom: 20px;
-  }
-} */
-    
- /* justify-content: flex-end; */
- 
 
 
 
@@ -509,6 +478,12 @@ body {
   box-shadow: 1px 3px 1px rgba(3,3,3, 0.12);  
   text-shadow: 0px 0px 6px rgba(255,255,255, 1.8); 
 } 
+@media (max-width: 560px){
+  .latest a:hover{
+    font-size: 11px;
+    margin-right: auto;
+  }
+}
  
 
 .raven {
@@ -522,22 +497,18 @@ body {
   background-image: url(../images/subterfuge_3.jpg);
 } 
 
-/* .still  h2{
-  margin-top: 360px;
- } */
-/* .raven  h2{
-  margin-top: 360px;
-} */
 
-/* .subterfuge  h2{
-  margin-top: 360px;
- } */
 body {
   margin: 0;
   background: linear-gradient(-45deg, rgba(35,35,35,1) 0%,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 0%,rgba(96,96,96,1) 0%,rgba(0,0,0,1) 0%,rgba(33,33,33,1) 0%,rgba(0,0,0,1) 0%,rgba(15,15,15,1) 1%,rgba(0,0,0,1) 4%,rgba(0,0,0,1) 30%,rgba(51,51,51,1) 48%,rgba(56,56,56,1) 53%,rgba(10,10,10,1) 73%,rgba(10,10,10,1) 86%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 99%,rgba(28,28,28,1) 99%,rgba(10,10,10,1) 100%,rgba(19,19,19,1) 100%,rgba(0,0,0,1) 100%);
-  
-   
-}
+  }
+
+  @media (max-width: 560px){
+    body{ 
+      margin: 0;
+      padding: 0
+    }
+  }
  .footer-main{
    background: linear-gradient(-45deg, rgba(35,35,35,1) 0%,rgba(0,0,0,1) 0%,rgba(0,0,0,1) 0%,rgba(96,96,96,1) 0%,rgba(0,0,0,1) 0%,rgba(33,33,33,1) 0%,rgba(0,0,0,1) 0%,rgba(15,15,15,1) 1%,rgba(0,0,0,1) 4%,rgba(0,0,0,1) 30%,rgba(51,51,51,1) 48%,rgba(56,56,56,1) 53%,rgba(10,10,10,1) 73%,rgba(10,10,10,1) 86%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 99%,rgba(28,28,28,1) 99%,rgba(10,10,10,1) 100%,rgba(19,19,19,1) 100%,rgba(0,0,0,1) 100%);
    display: flex;
@@ -605,7 +576,7 @@ body {
    font-family: "Poppins";
    margin-top: 10px;
    }
-   @media screen and (max-width: 795px){
+   @media screen and (max-width: 780px){
      .social {
     flex-direction: column;
     align-items: center;

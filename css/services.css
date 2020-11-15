@@ -78,52 +78,20 @@ h3 {
 
 .hamburger-icon {
   width: 60px;
-  margin-right: 60px;
   padding: 10px;
   display: none;
+  margin-right: 60px;
 }
+
 @media (max-width: 1080px){
   .hamburger-icon {
     display: block;
   }
+  
   .topnav-right{
     display: none;
   }
 } 
-.hamburger-menu{
- background-color: rgba(0,0,0,0.91);
- bottom: 0;
- left: 0;
- right: 0;
- top: 0;
- opacity: 0;
- overflow-y: scroll;
- padding: 15px 30px;
- position: fixed;
- transition: all 0.35s ease-in-out;
- transform: translateX(100%);
- z-index: 10;
- text-align: right;
-
-}
-.hamburger-menu a {
-  color: #fff;
-  display: block;
-  font-size: 16px;
-  margin: 24px auto;
-  text-align: center;
-  text-decoration: none;
-}
-.menu-close {
-  cursor: pointer;
-  width: 24px;
-  padding: 20px;
-}
-
-.menu-open {
-  transform: translateX(0%);
-  opacity: 1;
-}
 
 
 .services-nok {
@@ -262,18 +230,18 @@ td {
     padding-right: 50px;
   }
 }
-p {
+.comp {
   padding-left: 64px;
   color: #dcdcdc;
   width: 400px;
 }
 @media (max-width:910px){
-  p{
+  .comp{
    width: 400px;
  }
 }
 @media (max-width:768px){
-p{
+.comp{
   width: 100%;
 }
 }
@@ -317,7 +285,7 @@ body {
   padding: 8px; 
   font-family: "Poppins";
 }
-.contact-address p{
+.contact-address {
   margin: auto; 
   text-align: center;
   margin-top: 20px;
@@ -325,7 +293,8 @@ body {
   margin-bottom: 40px;
 }
 @media screen and (max-width:780px){
-  .contact-address p {
+  .contact-address  {
     width:395px;
+    margin: auto;
   }
 }

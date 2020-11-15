@@ -104,41 +104,6 @@ h3 {
     display: none;
   }
 } 
-.hamburger-menu{
- background-color: rgba(0,0,0,0.91);
- bottom: 0;
- left: 0;
- right: 0;
- top: 0;
- opacity: 0;
- overflow-y: scroll;
- padding: 15px 30px;
- position: fixed;
- transition: all 0.35s ease-in-out;
- transform: translateX(100%);
- z-index: 10;
- text-align: right;
-
-}
-.hamburger-menu a {
-  color: #fff;
-  display: block;
-  font-size: 16px;
-  margin: 24px auto;
-  text-align: center;
-  text-decoration: none;
-}
-.menu-close {
-  cursor: pointer;
-  width: 24px;
-  padding: 20px;
-}
-
-.menu-open {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
 
 .about-nok {
   display: flex;
@@ -207,13 +172,10 @@ h3 {
 @media (max-width:900px){
   #black-overlay-left-about{
     width: 100%;
-    z-index: 1000;
+    
   }
   }
 
- /* #aboutus-5{
-  background-image: url(../images/Heavenly5.jpg);
-}  */
  .nokabout {
   font-size: 16px;
   width: 80%;
@@ -263,16 +225,7 @@ span {
      visibility: hidden; 
   }
   } 
-/* .small-heavenly1{
-  width:50px;
-  height:75px;
-}
-@media(max-width){
-  .small-heavenly1{
-    width:50px;
-  height:75px;
-  }
-} */
+
 body {
   background-color: #000;
 }
